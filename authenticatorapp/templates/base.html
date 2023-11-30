@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %}{% endblock title %}| W. Shoes </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Kenia&family=Lobster+Two&family=Orbitron:wght@900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./static/style.css">
+    {% block head %}{% endblock head %}
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <a href="./wahab.html"> <img src="./static/imgs/images.png" alt=""></a>
+            </div>
+
+            <div class="logo">
+                <h1><a href="">W. Shoes</a></h1> 
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="">Orders</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+       {% block body %}{% endblock body %}
+    </div>
+</body>
+
+</html>
